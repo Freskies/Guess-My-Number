@@ -1,0 +1,124 @@
+/* GENERAL */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Press Start 2P", sans-serif;
+	font-weight: 400;
+	background-color: #222;
+	color: #eee;
+}
+
+.btn {
+	font-family: inherit;
+	color: #222;
+	font-weight: 500;
+	font-size: 2rem;
+
+	border: none;
+	padding: 2rem 3.2rem;
+}
+
+/* HEADER */
+
+.guess-my-number-header {
+	height: 35vh;
+	padding: 2.4rem;
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+
+	border-bottom: 0.7rem solid #eee;
+}
+
+.again-and-rules {
+	position: relative;
+}
+
+.btn--again {
+	position: absolute;
+	left: 0;
+}
+
+.rules {
+	position: absolute;
+	right: 0;
+	font-size: 1.6rem;
+}
+
+.game-title {
+	font-size: 4rem;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.guess-my-number-header::after {
+	content: "?";
+	padding: 3.2rem 4.8rem;
+	background-color: #eee;
+	color: #333;
+	font-size: 6.4rem;
+
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 50%);
+}
+
+/* GAME */
+
+.guess-my-number-game {
+	height: 65vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	justify-content: center;
+}
+
+.guess {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2.8rem;
+}
+
+.game-input {
+	height: 11rem;
+	width: 25rem;
+
+	font-size: 4.8rem;
+	font-family: inherit;
+	background-color: inherit;
+	color: inherit;
+	text-align: center;
+
+	border: 4px solid #eee;
+	padding: 0 3rem;
+}
+
+.results {
+	display: flex;
+	flex-direction: column;
+	gap: 2.8rem;
+	margin: auto;
+	font-size: 2rem;
+	letter-spacing: 0.1rem;
+}
+
+.results p:first-child {
+	margin-bottom: 5.6rem;
+}
+
+/* TODO media-queries */
