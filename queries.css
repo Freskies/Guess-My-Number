@@ -1,0 +1,62 @@
+/*******************************************/
+/* HEIGHT BELOW 800px */
+/*******************************************/
+@media (max-height: 50em) {
+	.game-title {
+		font-size: 3rem;
+	}
+}
+
+/*******************************************/
+/* BELOW 800px */
+/*******************************************/
+@media (max-width: 50em) {
+	html {
+		font-size: 50%;
+	}
+
+	.game-title {
+		font-size: 3rem;
+	}
+
+	.guess {
+		padding-top: 8vh;
+	}
+
+	.results {
+		padding-bottom: 8vh;
+	}
+
+	.guess-my-number-game {
+		grid-template-columns: 1fr;
+	}
+
+	.guess-my-number-header {
+		height: 30vh;
+	}
+
+	.guess-my-number-game {
+		height: 70vh;
+	}
+}
+
+/*******************************************/
+/* BELOW 464px */
+/*******************************************/
+@media (max-width: 29em) {
+	html {
+		font-size: 40%;
+	}
+
+	.game-title {
+		font-size: 3rem;
+	}
+
+	.guess {
+		padding-top: 5vh;
+	}
+
+	.results {
+		padding-bottom: 5vh;
+	}
+}
